@@ -11,6 +11,7 @@ All you have to do here is create the python script that you want to be run on t
 
 ## Set up the Arduino circuit
 The circuit looks as follows:
+
 ![Circuit](https://github.com/benmgil/Arduino-Mac-Script-Runner/blob/master/circuit.png)
 The switch is there so that it does not start pressing keys whenever the Arduino is plugged into your computer. Instead, you press the switch when you are ready to start it.
 Once that is built, upload the sketch arduino_mac_script_runner.ino to the Arduino board.
